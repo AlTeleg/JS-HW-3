@@ -41,7 +41,7 @@ class GoodList {
 
     remove(id) {
         for (let good of this.#goods) {
-            if (good.id == id) {
+            if (good.id === id) {
                 this.#goods.splice(good, 1);
             }
         }
