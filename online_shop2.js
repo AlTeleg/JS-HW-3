@@ -36,7 +36,7 @@ class GoodList {
     } 
 
     add(...good) {
-        this.#goods.push(...good) 
+        this.#goods.push(...good); 
     }
 
     remove(id) {
@@ -64,7 +64,7 @@ class Basket {
             sum += good.amount;
             return sum;
         },0)
-        return totalAmount     
+        return totalAmount;    
     } 
 
     get totalSum() {
@@ -111,48 +111,48 @@ class Basket {
 }
 
 
-good1 = new Good(1, "TV", "cool", [32, 33, 38], 4500)
-good2 = new Good(2, "dress", "long", [38, 40, 42], 800, false)
-good3 = new Good(3, "motherboard", "new", ["atx"], 350, false)
-good4 = new Good(4, "shoes", "classic", [40, 42, 43], 300)
-good5 = new Good(5, "table", "round", ["big", "small"], 500, false)
+good1 = new Good(1, "TV", "cool", [32, 33, 38], 4500);
+good2 = new Good(2, "dress", "long", [38, 40, 42], 800, false);
+good3 = new Good(3, "motherboard", "new", ["atx"], 350, false);
+good4 = new Good(4, "shoes", "classic", [40, 42, 43], 300);
+good5 = new Good(5, "table", "round", ["big", "small"], 500, false);
 
-basket = new Basket()
-goodList = new GoodList()
+basket = new Basket();
+goodList = new GoodList();
 
-goodList.add(good1, good2, good3, good4, good5)
+goodList.add(good1, good2, good3, good4, good5);
 
-basket.add(good1, 1)
-basket.add(good3, 5)
-console.log(basket.totalSum)
-console.log(basket.totalAmount)
+basket.add(good1, 1);
+basket.add(good3, 5);
+console.log(basket.totalSum);
+console.log(basket.totalAmount);
 
 
-console.log(basket.goods)
+console.log(basket.goods);
 
-basket.add(good1, 3)
+basket.add(good1, 3);
 
-console.log(basket.goods)
-console.log(basket.totalSum)
-console.log(basket.totalAmount)
+console.log(basket.goods);
+console.log(basket.totalSum);
+console.log(basket.totalAmount);
 
-basket.removeUnavailable()
+basket.removeUnavailable();
 
-console.log(basket.goods)
+console.log(basket.goods);
 
-basket.clear()
+basket.clear();
 
-console.log(basket.goods)
+console.log(basket.goods);
 
-goodList.remove(1)
+goodList.remove(1);
 
-console.log(goodList.list[0])
+console.log(goodList.list[0]);
 
 goodList.sortPrice = true;
 
-console.log(goodList.list[0])
+console.log(goodList.list[0]);
 
 goodList.sortDir = false;
-goodList.add(good1)
+goodList.add(good1);
 
-console.log(goodList.list[0])
+console.log(goodList.list[0]);
