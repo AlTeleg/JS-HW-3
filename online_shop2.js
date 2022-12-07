@@ -156,11 +156,3 @@ goodList.sortDir = false;
 goodList.add(good1)
 
 console.log(goodList.list[0])
-
-
-
-
-
-
-
-
